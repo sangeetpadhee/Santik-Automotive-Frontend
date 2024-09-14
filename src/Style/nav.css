@@ -48,7 +48,8 @@
 }
 
 @media screen and (max-width:450px) {
-    .upper{
+    .uppersantik{
+        height: 32px;
     }
     .menuic{
         margin-top: -0px;
