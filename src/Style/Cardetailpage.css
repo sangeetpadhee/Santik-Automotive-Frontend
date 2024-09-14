@@ -267,6 +267,8 @@ gap: 20px;
 .User-Review-On-Car {
     display: flex;
     padding: 20px;
+     gap: 15px;
+    overflow: auto;
     background-color: #f8f8f8;
     border-radius: 10px;
     margin: 20px 0;
@@ -317,6 +319,12 @@ gap: 20px;
   
 
 @media screen and (max-width:399px) {
+    .User-Review-On-Car-Container {
+      min-width: 300px;
+      }
+      .User-Review-Upper h1 {
+        font-size: 16px;
+    }
 .Button-Manage{
     overflow: auto;
     justify-content: space-between;
@@ -327,6 +335,13 @@ gap: 20px;
 }
 }
 @media screen and (min-width:399px) and (max-width:500px) {
+    .User-Review-On-Car-Container {
+        min-width: 450px;
+        gap: 10px;
+        }
+        .User-Review-Upper h1 {
+            font-size: 16px;
+        }
     .Button-Manage{
         overflow: auto;
         justify-content: space-between;

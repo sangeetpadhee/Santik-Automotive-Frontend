@@ -33,7 +33,7 @@
     background-color: black;
 }
 
-.menuic{
+.menuic, .menuic-login{
     margin-top: -4px;
     width: 22px;
     font-size: 50px;
@@ -45,4 +45,18 @@
     justify-content: center;
     align-items: start;
     gap: 20px;
+}
+
+@media screen and (max-width:450px) {
+    .upper{
+    }
+    .menuic{
+        margin-top: -0px;
+        width: 15px;
+        font-size: 50px;
+    }
+    .menuic-login{
+        margin-top: -0px;
+        width: 18px;
+    }
 }

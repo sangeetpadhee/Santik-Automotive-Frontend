@@ -232,6 +232,11 @@
     text-transform: capitalize;
 }
 
+@media screen and (max-width:450px) {
+    .budget{
+        min-width: 120px;
+    }
+}
 /* Media Query for screens up to 800px */
 @media (max-width: 800px) {
     .features-grid {
@@ -242,6 +247,7 @@
     }
     .categories-grid{
         justify-content: space-around;
+        justify-content: start;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;

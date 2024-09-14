@@ -36,7 +36,7 @@ const Nav = () => {
         <div className="upper">
           <FontAwesomeIcon icon={faBars} className='menuic' onClick={onOpen} />
           <img src={headingimg} className='uppersantik' alt="" />
-          <Link to='register'><FontAwesomeIcon icon={faUserPlus} className='menuic' /></Link>
+          <Link to='register'><FontAwesomeIcon icon={faUserPlus} className='menuic-login' /></Link>
         </div>
         <div className="border"></div>
 
