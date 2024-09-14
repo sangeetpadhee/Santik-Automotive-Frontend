@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 97%;
+}
+.upper{
+    margin-top: -20px;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-solid{
+    display: flex;
+    margin-top: 15px;
+    font-size:  22px;
+}
+.uppersantik{
+    height: 40px;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.border{
+    margin-top: -20px;
+    opacity: 0.4;
+    border-radius: 50px;
+    height: 1.2px;
+    width: 100%;
+    background-color: black;
+}
+
+.menuic{
+    margin-top: -4px;
+    width: 22px;
+    font-size: 50px;
+}
+
+.drawercomp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}

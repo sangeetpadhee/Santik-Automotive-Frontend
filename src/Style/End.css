@@ -1,0 +1,39 @@
+/*          END PART      */
+
+
+.end{
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 100px auto 0px auto;
+    color: #eae7e796;
+    background-color: #050b20;
+    height: 250px;
+    width: 100%;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+@media screen and (max-width:405px) {
+    .end{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:405px) and (max-width:450px) {
+    .end{
+        font-size: 14px;
+    }
+  
+  }

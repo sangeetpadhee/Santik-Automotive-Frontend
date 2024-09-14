@@ -1,0 +1,150 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+  
+  .main-content {
+    padding: 0;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+  }
+  
+  .product-details img {
+    width: 70%; 
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space below image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-info {
+    text-align: center; /* Center-align text */
+  }
+  
+  .product-info h3 {
+    margin-top: 10px;
+    font-weight: 550;
+    font-size: 20px;
+  }
+  
+  .price-rating{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    >button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #441ede;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+  }
+  .Product-Desc{
+    width: 75vw;
+    height: 250px;
+    background-color: rgb(188, 190, 192);
+    display: flex;
+    flex-direction: column;
+    >button{
+        margin-left: auto;
+        margin-right: 10px;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        background-color: #d92222;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 30px;   
+    }
+  }
+.Acce-Description{
+    overflow: hidden;
+    margin: 5px 0 15px 25px;
+    width: 82%;
+    height: auto;
+    font-size: 17px;
+ }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row;
+    }
+  
+    .sidebar {
+      display: block;
+      width: 200px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+    }
+  
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+  
+    .product-details {
+      flex-direction: row; /* Align image and text side by side on larger screens */
+    }
+  
+    .product-details img {
+      width: 300px;
+      margin-right: 20px;
+    }
+  
+    .product-info {
+      text-align: left;
+    }
+  }
+
+  .Acc-Detail-Container{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    gap: 30px;
+    overflow: auto;
+    align-items: center;
+  }
+  .Acc-Detail-Container::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+  }

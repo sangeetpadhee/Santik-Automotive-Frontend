@@ -1,0 +1,33 @@
+.carservicecontainer{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 90%;
+    background-color: rgb(170, 169, 168);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicedetail{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 420px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    >h1{
+        font-size: 18px;
+        font-weight: 550;
+    }
+    >button{
+        margin-left: auto;
+        background-color: rgb(226, 83, 83);
+        border-radius: 15px;
+        width: 90px;
+        height: 28px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.upperbelow{
+    width: 90%;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+}
+.redlineupper{
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 120px;
+    width: 5px;
+    background-color: red;
+}
+.upperbelowbox{
+    margin-top: 15px;
+    font-weight: 550;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman';
+    gap: 10px;
+    font-size: 15px;
+    height: auto;
+    width: 70%;
+}
+.carupper{
+    
+    height: 200px;
+}

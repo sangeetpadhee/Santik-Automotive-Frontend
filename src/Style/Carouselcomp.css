@@ -1,0 +1,135 @@
+/* SliderComponent.css */
+
+.slider {
+    margin-top: 30px;
+    width: 70%;
+    height: 450px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .slider-item,
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+    animation: fadeAnimation 0.5s;
+  }
+  
+  .slider-btns {
+    position: absolute;
+    top: 50%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slider-btns button {
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+    color: rgb(45, 41, 41);
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  #btn-prev{
+    margin-left: 10px;
+  }
+  #btn-prev,
+  #btn-next {
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transition: opacity linear;
+    }
+  }
+  
+  .dots {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 3px;
+    background-color: rgba(241, 241, 241, 0.2);
+    cursor: pointer;
+  }
+  
+  .dot-active {
+    background-color: #fff;
+  }
+  
+  .Slider-New-Car{
+    margin:10px auto 0 auto;
+    height:35vh;
+    width:50%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .dots-New-Car {
+    margin-top: -18px;
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dot-New-Car {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(241, 241, 241, 0.495);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .dot-New-Car.dot-active {
+    background-color: #f2ff00 !important; /* Ensure the active dot is white */
+  }
+  
+  @media screen and (max-width:600px) {
+    .Slider-New-Car{
+      height: 18vh;
+      width: 80%;
+    }
+    .dots-New-Car{
+      width: 80%;
+    }
+    .dot-New-Car{
+      height: 8px;
+      width: 8px;
+    }
+    .slider {
+      margin-top: 30px;
+      width: 90%;
+      height: 300px;
+      position: relative;
+      user-select: none;
+    }
+  }

@@ -1,0 +1,108 @@
+.car-detail-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.car-name {
+    text-transform: capitalize;
+    font-size: 32px;
+    margin: 0;
+}
+
+.car-price {
+    font-size: 26px;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.details-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.details-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.details-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-section {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.usedcardetailten{
+    margin: 15px auto 0 auto;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 240px;
+    overflow: auto;
+}
+
+.usedcardetailten::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+.usedrestdetailten{
+    margin-top: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 190px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.usedrestimg{
+    height: 170px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

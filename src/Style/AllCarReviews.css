@@ -1,0 +1,124 @@
+
+.reviews-heading {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading-bar {
+  border-radius: 50px;
+  width: 80px;
+  height: 4px;
+}
+.reviews-heading .heading-bar {
+  background-color: #007bff;
+  margin: 0 auto 10px;
+}
+
+.reviews-heading .heading-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.write-review-title {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.write-review-title a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.write-review-title a:hover {
+  text-decoration: underline;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.review-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.name-car {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.car-name {
+  font-weight: 550;
+  font-size: 16px;
+  color: #323131;
+}
+
+.review-content {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .review-item {
+    padding: 10px;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-avatar {
+    margin-bottom: 10px;
+  }
+
+  .review-content {
+    font-size: 14px;
+  }
+}

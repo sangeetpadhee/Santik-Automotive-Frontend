@@ -1,0 +1,298 @@
+
+.Login-Main-Container {
+    height: 90vh;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Login-Right {
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    max-height: 550px;
+    width: 95vw;
+    max-width: 500px;
+    border-radius: 0 50px 50px 0 ;
+    overflow: hidden;
+}
+.Login-Right-Img{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 95vw;
+    max-width: 500px;
+    border-radius: 0 50px 0 0 ; 
+}
+.Login-Right-Text{
+    height: 210px;
+    width: 95%;
+    >h1{
+        margin: auto;
+        width: 90%;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    >h2{
+        margin: auto;
+        width: 90%;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+    }
+}
+.Login-Container {
+    border-radius: 30px 0 0 30px;
+    height: 75vh;
+    max-height: 550px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.05);
+    width: 95vw;
+    max-width: 500px;
+    border: 1px solid rgba(52, 52, 52, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;    /* Light gray background for a clean look */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Register-Container {
+    border-radius: 0 30px 30px 0;
+    height: 75vh;
+    max-height: 550px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.05);
+    width: 95vw;
+    max-width: 500px;
+    border: 1px solid rgba(52, 52, 52, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;    /* Light gray background for a clean look */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.Login-Upper{
+    margin-top: 12px;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(61, 58, 58);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.Login-Letter{
+    margin-top: 20px;
+    color: rgb(45, 40, 30);
+    width: 100%;
+}
+
+.Login-Container form, .Register-Container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Register-Submit-Txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Register-Submit-Txt input {
+    background-color: #ffffff; 
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.05); 
+    border-radius: 15px;
+    color: #333; 
+    width: 65%;
+    height: 45px;
+    border: 2px solid #ddd;
+    padding-left: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.File-Upload {
+    background-color: #ffffff; 
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.05); 
+    border-radius: 15px;
+    color: #333; 
+    width: 65%;
+    height: 45px;
+    border: 2px solid #ddd;
+    padding-left: 20px;
+    padding-top: 6px;
+    text-transform: capitalize;
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.Login-Container input::placeholder, .Register-Container input::placeholder{
+    color: #999; 
+}
+
+.Login-Container input:focus, .Register-Container input:focus{
+    outline: none;
+    border-color: #4a90e2;
+}
+
+
+
+input:active{
+    border: none;
+}
+
+.Login-Container label, .Register-Container label{
+    width: 60%;
+    height: 45px;
+    margin-top: 20px;
+    color: rgb(45, 40, 30);
+}
+.Login-Submit{
+    margin-top: 20px;
+    color: rgb(45, 40, 30);
+    background-color: rgba(246, 246, 58, 0.629);
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 45px;
+    width: 150px;
+}
+.Login-Last{
+    margin-top: 30px;
+    width: 100%;
+    >p{
+        text-transform: capitalize;
+        width: 100%;
+        text-align: center;
+        color: rgb(45, 40, 30);
+        >a{
+            text-decoration: underline;
+            color: red;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/* Loading spinner overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure spinner is on top of other content */
+}
+
+/* Car loader styles */
+.car-loader {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Car body styles */
+.car {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Car window styles */
+.car-window {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Wheel styles */
+.wheel {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.wheel-front {
+    bottom: -10px;
+    left: 10px;
+}
+
+.wheel-back {
+    bottom: -10px;
+    right: 10px;
+}
+
+/* Animation for the car loader */
+@keyframes drive {
+    0% {
+        transform: translateX(-120%);
+    }
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+.car-loader {
+    animation: drive 2s linear infinite;
+}
+
+@media screen and (max-width:500px) {
+    .Login-Right {
+        display: none;
+    }
+    .Login-Container, .Register-Container{
+        border-radius: 0px 0px 0px 0px;
+        margin: 20px 0 50px 0;
+        box-shadow: none;
+        width: 99vw;
+        border: none;
+           /* Light gray background for a clean look */
+        padding: 10px;
+    }
+    .Login-Main-Container{
+        background: #f9f9f9;
+        width: 100vw;
+        height: auto;
+        margin-bottom: -95px;
+    }
+    .Register-Submit-Txt input{
+        width: 75%;
+    }
+    .Login-Container label{
+        width: 68%;
+    }
+    .File-Upload {
+        width: 75%;
+    }
+
+}

@@ -1,0 +1,62 @@
+.Main-Body-RC{
+    margin: 0 auto 0 auto;
+    height: 100vh;
+    width: 95vw;
+
+}
+.RC-Search{
+    margin: 20px auto 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >button{
+        margin-left: 10px;
+        border-radius: 20px;
+        height: 80px;
+        width: 80px;
+        background-color: rgb(132, 132, 166);
+       }
+}
+.Number-Search-Container{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    >img{
+        margin-left: -10px;
+        height: 80px;
+        width: 20%;
+        border: 4px solid black;
+        object-fit: cover;
+        object-position: center;
+    }
+    >input{
+        outline: none;
+        margin: 0 auto 0 auto;
+        width: 80%;
+        height: 90%;
+        font-size: 18px;
+        font-weight: 650;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    >.focused{
+        outline: none;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .Number-Search-Container{
+        >input{
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+
+.Dealer-Showroom-Container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.Dealer-Showroom-Details {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.Dealer-Showroom-Name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.Dealer-Showroom-Address,
+.Dealer-Showroom-Contact {
+    font-size: 16px;
+    color: #555;
+}
+
+.Dealer-Showroom-Address b,
+.Dealer-Showroom-Contact b {
+    color: #000;
+}
+
+@media screen and (min-width:700px){
+    .Dealer-Showroom-Container{
+        width: 90%;
+        margin: 10px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    .Dealer-Showroom-Details{
+        width: 400px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:450px){
+    .Dealer-Showroom-Container{
+        height: 400px;
+        overflow: auto;
+    } 
+}

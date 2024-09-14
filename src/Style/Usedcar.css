@@ -1,0 +1,100 @@
+
+#place, #sortprice, #km, #fuel, #make, #transmission{
+    margin-top: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.usedcarcontainer{
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.usedcarsec{
+    box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 255px;
+    width: 230px;
+    border-radius: 15px;
+}
+.usedcarimg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+    height: 65%;
+    width: 100%;
+}
+.usedcarname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    >h1{
+        width: 100%;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+}
+.usedcarprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    >h1{
+    font-size: 18px;
+    font-weight: 500;
+    }
+    >span{
+        font-size: 12px;
+        font-weight: 300
+    }
+}
+.locationkm{
+    height: 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    >h1{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    >span{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .usedcarsec{
+        width: 170px;
+        height: 220px;
+    }
+    .usedcarcontainer{
+        gap: 20px;
+    }
+}
+@media screen and (min-width:399px) and (max-width:430px) {
+    .usedcarsec{
+        width: 185px;
+        height: 220px;
+    }
+    .usedcarcontainer{
+        gap: 25px;
+    }
+}

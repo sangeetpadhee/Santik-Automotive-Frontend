@@ -1,0 +1,202 @@
+.piechart {
+    margin-top: 15px;
+    width: 240px;
+    height: 250px;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.piechart h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 80% !important;
+    height: 80% !important;
+}
+
+.emicontainer{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 95%;
+    background-color: rgb(176, 178, 180);
+    display: flex;
+    flex-direction: column;
+}
+
+.principalamt, .rateamt,.termamt {
+    margin-left: 10px;
+    gap:5px;
+    width:300px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    >input{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 35px;
+        border-radius: 6px;
+    }    
+}
+.termalldetails{
+    margin-left: 15px;
+    width: 371px;
+    display: flex;
+    >input{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 35px;
+        border-radius: 6px;
+    }
+
+}
+.Emi-Btns{
+    margin-left: 10px;
+    display: flex;
+    gap: 8px;
+    width: 130px;
+    >button{
+        border-radius: 5px;
+        height: 100%;
+        width: 50px;
+        background-color: rgb(213, 215, 217);
+    }
+}
+.emiuppercontainer{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    >p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    >.redbaremi{
+        border-radius: 15px;
+        width: 5px;
+        height: 40px;
+        background-color: red;
+    }
+}
+.emirange{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -18px;
+    >span{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+.yearemirange{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 25px;
+    display: flex;
+    margin-top: -18px;
+    >span{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+.emiresultcontainer{
+    margin-top: -2px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 280px;
+    width: 95%;
+    background-color: rgb(176, 178, 180);
+}
+.emiresultleft{
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 250px;
+}
+
+.emiresult, .interestresult, .paymentresult{
+ >h1{
+    font-size: 18px;
+    font-weight: 600;
+ }
+}
+
+@media screen and (max-width:399px) {
+
+
+.Emi-Btns{
+    margin-left: 4px;
+    display: flex;
+    gap: 8px;
+    width: 130px;
+    >button{
+        border-radius: 5px;
+        height: 100%;
+        width: 30px;
+        background-color: rgb(213, 215, 217);
+    }
+}
+
+}
+@media screen and (min-width:399px) and (max-width:420px) {
+    .Emi-Btns{
+        margin-left: 5px;
+        display: flex;
+        gap: 8px;
+        width: 130px;
+        >button{
+            border-radius: 5px;
+            height: 100%;
+            width: 40px;
+            background-color: rgb(213, 215, 217);
+        }
+    }
+ }
+
+@media screen and (min-width:900px) and (max-width:2000px) {
+    .piechart {
+    margin-top: -425px;
+    width: 440px;
+    height: 450px;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
