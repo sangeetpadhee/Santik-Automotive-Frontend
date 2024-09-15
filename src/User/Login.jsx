@@ -5,7 +5,7 @@ import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
 
 const Login = () => {
-    
+    const [isLoading, setIsLoading] = useState(false)
     const[FormData, setFormData]= useState({
         email:'',
         password:''
@@ -15,11 +15,12 @@ const Login = () => {
 
     const navigate = useNavigate()
     const HandleSubmit=async(e)=>{
-        try{
         e.preventDefault();
-        
+        setIsLoading(true)
+        try{        
         const baseUrl = await axios.post(`https://santik-automotive-api.onrender.com/api/user/Login`, FormData)
         const UserDetail = baseUrl.data.user;
+        setIsLoading(false)
         sessionStorage.setItem('user', JSON.stringify(UserDetail))
         alert(baseUrl.data.message)
         navigate('/User-Detail')
@@ -62,6 +63,18 @@ const Login = () => {
                         <h2>Log in to access your personalized dashboard where you can revisit saved searches, compare your favorite cars, stay updated with the latest automotive news, and read or share user reviews. Your feedback helps the community, and we're here to ensure your car experience is always top-notch. Let’s dive back in!</h2></div>
                     </div>
                 </div>
+                {isLoading && (
+                    <div class="loading-overlay">
+                    <div class="car-loader">
+                        <div class="car">
+                            <div class="car-body"></div>
+                            <div class="car-window"></div>
+                            <div class="wheel wheel-front"></div>
+                            <div class="wheel wheel-back"></div>
+                        </div>
+                    </div>
+                </div>
+                )}
             </div>
         </>
     )

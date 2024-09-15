@@ -2644,139 +2644,136 @@ const AllCars = [
     },
     "seating capacity": "5 Seater",
     "pros": [
-        "Affordable EV - It is currently the most affordable EV in the Indian market.",
-        "City driving range - 19.2kWh runs 250km (claimed), 24kWh runs 213.9km (tested).",
-        "Safety kit - This EV is kitted-out with a decent list of safety equipment.",
-        "Powertrain options - Is offered in two battery pack options, 19.2kWh and 24kWh.",
-        "Charging options - 15A plug point, 3.3kW charger, 7.2kW AC fast charger, DC fast charger."
+      "Long list of features.",
+      "Engine and gearbox options.",
+      "Expected to have a high safety rating.",
     ],
     "cons": [
-        "Long distance range anxiety - Not enough for people to venture out on highways.",
-        "Expensive - Despite its 'green' interests, the top-end variants are pricey.",
-        "Charging infrastructure - Charging station scarcity restricts carefree EV driving."
+      "Aggressive design is not appreciated by all.",
+      "Visibility through the rear windscreen.",
     ],
     "category": "ev",
     "variants": [
-        {
-            "variant": "Smart 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 11.76 Lakh"
-        },
-        {
-            "variant": "Smart Plus 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 12.27 Lakh"
-        },
-        {
-            "variant": "Adventure 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 12.79 Lakh"
-        },
-        {
-            "variant": "Adventure S 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 13.31 Lakh"
-        },
-        {
-            "variant": "Empowered 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 13.62 Lakh"
-        },
-        {
-            "variant": "Adventure Long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 13.82 Lakh"
-        },
-        {
-            "variant": "Empowered S 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.13 Lakh"
-        },
-        {
-            "variant": "Empowered Plus 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.13 Lakh"
-        },
-        {
-            "variant": "Adventure Long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.34 Lakh"
-        },
-        {
-            "variant": "Adventure S Long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.34 Lakh"
-        },
-        {
-            "variant": "Empowered Plus S 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.65 Lakh"
-        },
-        {
-            "variant": "Adventure S Long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.86 Lakh"
-        },
-        {
-            "variant": "Empowered Long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 14.86 Lakh"
-        },
-        {
-            "variant": "Empowered Long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.37 Lakh"
-        },
-        {
-            "variant": "Empowered Plus Long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.37 Lakh"
-        },
-        {
-            "variant": "Empowered S Long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.37 Lakh"
-        },
-        {
-            "variant": "Empowered Plus S long Range 3.3",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.89 Lakh"
-        },
-        {
-            "variant": "Empowered S Long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.89 Lakh"
-        },
-        {
-            "variant": "Empowered Plus Long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 15.89 Lakh"
-        },
-        {
-            "variant": "Empowered Plus S long Range 7.2 Fast Charger",
-            "fuelType": "Electric",
-            "transmission": "Automatic",
-            "price": "Rs. 16.41 Lakh"
-        }
+      {
+        "variant": "Smart 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 11.76 Lakh"
+    },
+    {
+        "variant": "Smart Plus 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 12.27 Lakh"
+    },
+    {
+        "variant": "Adventure 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 12.79 Lakh"
+    },
+    {
+        "variant": "Adventure S 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 13.31 Lakh"
+    },
+    {
+        "variant": "Empowered 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 13.62 Lakh"
+    },
+    {
+        "variant": "Adventure Long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 13.82 Lakh"
+    },
+    {
+        "variant": "Empowered S 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.13 Lakh"
+    },
+    {
+        "variant": "Empowered Plus 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.13 Lakh"
+    },
+    {
+        "variant": "Adventure Long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.34 Lakh"
+    },
+    {
+        "variant": "Adventure S Long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.34 Lakh"
+    },
+    {
+        "variant": "Empowered Plus S 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.65 Lakh"
+    },
+    {
+        "variant": "Adventure S Long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.86 Lakh"
+    },
+    {
+        "variant": "Empowered Long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 14.86 Lakh"
+    },
+    {
+        "variant": "Empowered Long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.37 Lakh"
+    },
+    {
+        "variant": "Empowered Plus Long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.37 Lakh"
+    },
+    {
+        "variant": "Empowered S Long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.37 Lakh"
+    },
+    {
+        "variant": "Empowered Plus S long Range 3.3",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.89 Lakh"
+    },
+    {
+        "variant": "Empowered S Long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.89 Lakh"
+    },
+    {
+        "variant": "Empowered Plus Long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 15.89 Lakh"
+    },
+    {
+        "variant": "Empowered Plus S long Range 7.2 Fast Charger",
+        "fuelType": "Electric",
+        "transmission": "Automatic",
+        "price": "Rs. 16.41 Lakh"
+    }
     ],
     "dimensions": {
         "length": "3800 mm",
@@ -2786,6 +2783,521 @@ const AllCars = [
         "groundClearance": "180 mm"
     },
     "colorsAvailable": ["Blue", "Red", "Silver", "White", "Black"]
+}
+,
+{
+  "id": 189,
+  "make": "Tata",
+  "name": "Tata Curvv EV",
+  "price (ex-show)": "10.99-15.5 Lakh (Ex-show)",
+  "mainImage": "https://imgd.aeplcdn.com/664x374/n/cw/ec/115617/curvv-ev-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80",
+  "image2": "https://imgd.aeplcdn.com/199x112/n/cw/ec/115617/curvv-ev-exterior-right-front-three-quarter-6.jpeg?isig=0&q=80",
+  "image3": "https://imgd.aeplcdn.com/199x112/n/cw/ec/115617/curvv-ev-exterior-right-side-view.jpeg?isig=0&q=80",
+  "image4": "https://imgd.aeplcdn.com/468x263/n/cw/ec/115617/curvv-ev-interior-steering-wheel.jpeg?isig=0&q=80",
+  "engine": {
+      "fuel type": "Electric",
+      "driving range": "502 to 585 km",
+      "battery capacity": "45 to 55 kWh",
+      "transmission": "Automatic",
+      "charging options": "15A plug point, 3.3kW charger, 7.2kW AC fast charger, DC fast charger"
+  },
+  "seating capacity": "5 Seater",
+  "pros": [
+    "Long list of features.",
+    "Engine and gearbox options.",
+    "Expected to have a high safety rating.",
+  ],
+  "cons": [
+    "Aggressive design is not appreciated by all.",
+    "Visibility through the rear windscreen.",
+  ],
+  "category": "ev",
+  "variants": [
+    {
+      "variant": "Pure Plus 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 12.88 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 13.70 Lakh"
+  },
+  {
+      "variant": "Smart 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 13.74 Lakh"
+  },
+  {
+      "variant": "Creative 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 14.26 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 14.60 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 14.83 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 14.92 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 15.42 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 15.75 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 15.98 Lakh"
+  },
+  {
+      "variant": "Creative 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 15.99 Lakh"
+  },
+  {
+      "variant": "Creative 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 16.32 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 16.32 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 16.56 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 16.67 Lakh"
+  },
+  {
+      "variant": "Creative S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 16.91 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 17.13 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 17.47 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 17.51 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 17.75 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 18.12 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 18.66 Lakh"
+  },
+  {
+      "variant": "Creative S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 18.72 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 18.90 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 19.24 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 19.29 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 19.89 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 20.38 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 20.39 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 21.05 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 21.06 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 22.11 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 22.58 Lakh"
+  },
+  {
+      "variant": "Creative 45",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 18.61 Lakh"
+  },
+  {
+      "variant": "Accomplished 45",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 19.66 Lakh"
+  },
+  {
+      "variant": "Accomplished 55",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 20.45 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus S 45",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 20.50 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus S 55",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 21.23 Lakh"
+  },
+  {
+      "variant": "Empowered Plus 55",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 22.55 Lakh"
+  },
+  {
+      "variant": "Empowered Plus A 55",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "price": "Rs. 23.32 Lakh"
+  }
+  ],
+  "dimensions": {
+      "length": "3800 mm",
+      "width": "1680 mm",
+      "height": "1570 mm",
+      "wheelbase": "2450 mm",
+      "groundClearance": "180 mm"
+  },
+  "colorsAvailable": ["Blue", "Red", "Silver", "White", "Black"]
+}
+,
+{
+  "id": 191,
+  "make": "Tata",
+  "name": "Tata Curvv",
+  "price (ex-show)": "9.99-15.5 Lakh (Ex-show)",
+  "mainImage": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "image2": "https://imgd.aeplcdn.com/199x112/n/cw/ec/139651/curvv-ice-exterior-right-rear-three-quarter.jpeg?isig=0&q=80",
+  "image3": "https://imgd.aeplcdn.com/199x112/n/cw/ec/139651/curvv-ice-exterior-right-side-view.jpeg?isig=0&q=80",
+  "image4": "https://imgd.aeplcdn.com/468x263/n/cw/ec/139651/curvv-interior-steering-wheel.png?isig=0&q=80",
+  "engine": {
+      "fuel type": "Petrol & Diesel",
+      "engine": "1199 cc Turbocharged",
+      "transmission": "Manual & Automatic (DCT)",
+      },
+  "seating capacity": "5 Seater",
+  "pros": [
+      "Long list of features.",
+      "Engine and gearbox options.",
+      "Expected to have a high safety rating.",
+    ],
+  "cons": [
+      "Aggressive design is not appreciated by all.",
+      "Visibility through the rear windscreen.",
+  ],
+  "category": "premiumsub4meter",
+  "variants": [
+      
+    {
+      "variant": "Pure Plus 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 12.88 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 13.70 Lakh"
+  },
+  {
+      "variant": "Smart 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 13.74 Lakh"
+  },
+  {
+      "variant": "Creative 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 14.26 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 14.60 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 14.83 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 14.92 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 15.42 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 15.75 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 15.98 Lakh"
+  },
+  {
+      "variant": "Creative 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 15.99 Lakh"
+  },
+  {
+      "variant": "Creative 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 16.32 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 16.32 Lakh"
+  },
+  {
+      "variant": "Creative S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 16.56 Lakh"
+  },
+  {
+      "variant": "Pure Plus 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 16.67 Lakh"
+  },
+  {
+      "variant": "Creative S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 16.91 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Revotron Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 17.13 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 17.47 Lakh"
+  },
+  {
+      "variant": "Pure Plus S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 17.51 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 17.75 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 18.12 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 18.66 Lakh"
+  },
+  {
+      "variant": "Creative S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 18.72 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Revotron Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 18.90 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 19.24 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 19.29 Lakh"
+  },
+  {
+      "variant": "Creative Plus S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 19.89 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.2 Hyperion GDI Petrol 6MT",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "price": "Rs. 20.38 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 20.39 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.5 Kryojet Diesel 6MT",
+      "fuelType": "Diesel",
+      "transmission": "Manual",
+      "price": "Rs. 21.05 Lakh"
+  },
+  {
+      "variant": "Accomplished S 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 21.06 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.2 Hyperion GDI Petrol 7DCA",
+      "fuelType": "Petrol",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 22.11 Lakh"
+  },
+  {
+      "variant": "Accomplished Plus A 1.5 Kryojet Diesel 7DCA",
+      "fuelType": "Diesel",
+      "transmission": "Automatic (DCT)",
+      "price": "Rs. 22.58 Lakh"
+  }
+  ],
+  "dimensions": {
+      "length": "3800 mm",
+      "width": "1680 mm",
+      "height": "1570 mm",
+      "wheelbase": "2450 mm",
+      "groundClearance": "180 mm"
+  },
+  "colorsAvailable": ["Blue", "Red", "Silver", "White", "Black"]
 }
 ,
 {
@@ -4858,6 +5370,123 @@ const AllCars = [
         "length": "3985 mm",
         "width": "1820 mm",
         "height": "1920 mm",
+        "wheelbase": "2450 mm",
+        "groundClearance": "226 mm"
+    },
+    "colorsAvailable": ["Blue", "Red", "Silver", "White", "Black"]
+},
+{
+    "id": 190,
+    "make": "Mahindra",
+    "name": "Mahindra Thar Roxx",
+    "price (Ex-Show)": "12.25 - 18.20 Lakh",
+    "mainImage": "https://imgd.aeplcdn.com/664x374/n/cw/ec/124839/thar-roxx-exterior-right-front-three-quarter-24.jpeg?isig=0&q=80",
+    "image2": "https://imgd.aeplcdn.com/370x208/n/cw/ec/124839/thar-roxx-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80",
+    "image3": "https://imgd.aeplcdn.com/664x374/n/cw/ec/124839/thar-roxx-exterior-right-side-view.jpeg?isig=0&q=80",
+    "image4": "https://imgd.aeplcdn.com/370x208/n/cw/ec/124839/thar-roxx-interior-dashboard-42.jpeg?isig=0&q=80",
+    "engine": {
+        "fuel type": "Petrol & Diesel",
+        "engine capacity": "1997 cc & 2184 cc",
+        "safety rating": "Not Tested Yet",
+        "transmission": "Manual & Automatic",
+        "seating capacity": "5 Seater"
+    },
+    "pros": [
+        "Good balance of ride and handling.",
+        "Engines power this bulky SUV effortlessly.",
+        "Gets feel-good features missing on rivals.",
+        "Sheer size with a commanding stance."
+    ],
+    "cons": [
+        "On-road dynamics, poor petrol efficiency.",
+        "Can't comfort four people like some similarly priced cars.",
+        "Boot space, fit/finish in some places, restrictive rear legroom."
+    ],
+    "category": "tharsegment",
+    "variants": [    
+    {
+        "variant": "MX1 Diesel MT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Manual",
+        "price": "Rs. 16.87 Lakh"
+    },
+    {
+        "variant": "MX3 Petrol AT 2WD",
+        "fuelType": "Petrol",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 17.67 Lakh"
+    },
+    {
+        "variant": "MX3 Diesel MT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Manual",
+        "price": "Rs. 19.26 Lakh"
+    },
+    {
+        "variant": "MX5 Petrol MT 2WD",
+        "fuelType": "Petrol",
+        "transmission": "Manual",
+        "price": "Rs. 19.43 Lakh"
+    },
+    {
+        "variant": "AX3 L Diesel MT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Manual",
+        "price": "Rs. 20.43 Lakh"
+    },
+    {
+        "variant": "MX5 Diesel MT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Manual",
+        "price": "Rs. 20.43 Lakh"
+    },
+    {
+        "variant": "MX3 Diesel AT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 21.02 Lakh"
+    },
+    {
+        "variant": "MX5 Petrol AT 2WD",
+        "fuelType": "Petrol",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 21.16 Lakh"
+    },
+    {
+        "variant": "MX5 Diesel AT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 22.19 Lakh"
+    },
+    {
+        "variant": "AX5 L Diesel AT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 22.78 Lakh"
+    },
+    {
+        "variant": "AX7 L Diesel MT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Manual",
+        "price": "Rs. 22.78 Lakh"
+    },
+    {
+        "variant": "AX7 L Petrol AT 2WD",
+        "fuelType": "Petrol",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 23.45 Lakh"
+    },
+    {
+        "variant": "AX7 L Diesel AT 2WD",
+        "fuelType": "Diesel",
+        "transmission": "Automatic (TC)",
+        "price": "Rs. 24.54 Lakh"
+    }
+    ],
+    "dimensions": {
+        "length": "4428 mm",
+        "width": "1870 mm",
+        "height": "1923 mm",
         "wheelbase": "2450 mm",
         "groundClearance": "226 mm"
     },
@@ -9552,6 +10181,57 @@ const AllCars = [
       "fuelType": "Diesel",
       "transmission": "Automatic",
       "price": "Rs. 32.00 Lakh"
+    }
+  ],
+  "bodytype": "suv",
+  "dimensions": {
+    "length": "4500 mm",
+    "width": "1969 mm",
+    "height": "1710 mm",
+    "wheelbase": "2730 mm",
+    "groundClearance": "230 mm"
+  },
+  "colorsAvailable": ["Blue", "Red", "Silver", "White", "Black"]
+}
+,
+{
+  "id": 192,
+  "make": "Citroen",
+  "name": "Citroen Basalt",
+  "price (ex-show)": "7.00 - 12.12 Lakh (Ex-Show)",
+  "mainImage": "https://imgd.aeplcdn.com/664x374/n/cw/ec/163873/basalt-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+  "image2": "https://imgd.aeplcdn.com/199x112/n/cw/ec/163873/basalt-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80",
+  "image3": "https://imgd.aeplcdn.com/199x112/n/cw/ec/163873/basalt-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80",
+  "image4": "https://imgd.aeplcdn.com/468x263/n/cw/ec/163873/basalt-interior-steering-wheel.jpeg?isig=0&q=80",
+  "engine": {
+    "capacity": "1997 cc",
+    "fuel type": "Diesel",
+    "transmission": "Automatic",
+    "mileage": "18.9 kmpl"
+  },
+  "pros": [
+    "Ride quality - Supple suspension, comfortable ride, even over rough patches",
+    "Comfortable seats - Supportive seats with good cushioning and ample adjustment options",
+    "Spacious cabin - Roomy cabin with ample headroom and legroom for all passengers",
+    "Practical features - Split/fold rear seats, customizable boot space, and numerous storage options"
+  ],
+  "cons": [
+    "Engine refinement - Diesel engine can be noisy under hard acceleration, refinement not the best in class",
+    "Infotainment system - Interface could be more intuitive, responsiveness could be better"
+  ],
+  "category": "premiumsub4meter",
+  "variants": [
+    {
+      "variant": "2.0L Diesel Flair Automatic",
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "price": "Rs. 12.00 Lakh"
+    },
+    {
+      "variant": "2.0L Diesel Flair Plus Automatic",
+      "fuelType": "Diesel",
+      "transmission": "Automatic",
+      "price": "Rs. 14.00 Lakh"
     }
   ],
   "bodytype": "suv",
