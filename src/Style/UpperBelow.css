@@ -27,3 +27,17 @@
     
     height: 200px;
 }
+.Popular-Car-Heading-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 95%;
+    margin: auto;
+}
+.nameheading-popular-car{
+    font-size: 25px;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    font-weight: bold;
+}

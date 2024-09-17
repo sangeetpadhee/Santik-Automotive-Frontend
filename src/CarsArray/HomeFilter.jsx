@@ -24,10 +24,20 @@ const HomeFilter = {
       { id: 59, Name: "Toyota Innova Hycross", price: "19.77 - 30.68 lakh", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-73.jpeg?isig=0&q=80" }
     ],
     popabove: [
-      { id: 58, Name: "Toyota Fortuner Legender", price: "30.34 - 38.50 lakhs", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/137767/fortuner-legender-exterior-right-front-three-quarter-3.png?isig=0&q=80" },
-      { id: 63, Name: "Toyota Land Cruiser", price: "1.47 crore", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/139739/land-cruiser-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80" },
+      { id: 58, Name: "Toyota Fortuner Legender", price: "30.34 - 38.50 Lakhs", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/137767/fortuner-legender-exterior-right-front-three-quarter-3.png?isig=0&q=80" },
+      { id: 63, Name: "Toyota Land Cruiser", price: "1.47 Crore", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/139739/land-cruiser-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80" },
       { id: 78, Name: "Skoda Kodiaq", price: "38.50 - 41.99 Lakh", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/49051/kodiaq-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" },
       { id: 81, Name: "Jeep Wrangler", price: "53.90 - 57.90 Lakh", img: "https://imgd.aeplcdn.com/227x128/n/cw/ec/54437/wrangler-exterior-right-front-three-quarter-52.jpeg?isig=0&q=80" }
+    ],
+    randomdisplay: [
+      { id: 191, Name: "Tata Curvv", price: "9.98 - 18 Lakhs", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80" },
+      { id: 192, Name: "Citroen Basalt", price: "7.99 - 13.83 Lakhs", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/163873/basalt-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" },
+      { id: 34, Name: "Hyundai Creta", price: "11.00 - 20.30 Lakh", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/106815/creta-exterior-right-front-three-quarter-4.png?isig=0&q=80" },
+      { id: 50, Name: "Kia Seltos", price: "10.90 - 20.45 Lakh", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/174323/seltos-exterior-right-front-three-quarter.jpeg?isig=0&q=80" },
+      { id: 190, Name: "Mahindra Thar Roxx", price: "12.99 - 20.49 Lakhs", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/124839/thar-roxx-exterior-right-front-three-quarter-24.jpeg?isig=0&q=80" },
+      { id: 37, Name: "Hyundai Alcazar", price: "14.99-21.55 Lakh", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/157825/alcazar-facelift-exterior-right-front-three-quarter-10.jpeg?isig=0&q=80" },
+      { id: 17, Name: "Tata Nexon", price: "8.12 - 15.50 Lakh", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80" },
+      { id: 68, Name: "Honda Elevate", price: "11.91 - 16.63 Lakh", img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/142515/elevate-exterior-right-front-three-quarter-21.jpeg?isig=0&q=80" }
     ]
   };
   export default HomeFilter

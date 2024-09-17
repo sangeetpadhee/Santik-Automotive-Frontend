@@ -48,19 +48,19 @@ const Nav = () => {
 
             <DrawerBody>
               <div className="drawercomp">
-                <Link to='/'><button onClick={onClose}>Home</button></Link>
-                <Link to='/User-Detail'><button onClick={onClose}>User Details</button></Link>
-                <Link to='/new-car'><button onClick={onClose}>New Car</button></Link>
-                <Link to='car-news'><button onClick={onClose}>Car News</button></Link>
-                <Link to='/Car-Compare'><button onClick={onClose}>Car Comparison</button></Link>
-                <Link to='/wallpaper'><button onClick={onClose}>Wallpapers</button></Link>
-                <Link to='/car-rendering'><button onClick={onClose}>Car Renderings</button></Link>
-                <Link to='/Car-Rc-Details'><button onClick={onClose}>Car Rc Check</button></Link>
-                <Link to='/UsedCar'><button onClick={onClose}>Used Car</button></Link>
-                <Link to='/Emi-Calculator'><button onClick={onClose}>Emi Calculator</button></Link>
-                <Link to='/Car-Dealer'><button onClick={onClose}>Car Dealers</button></Link>
-                <Link to='/Car-Service'><button onClick={onClose}>Car Service</button></Link>
-                <Link to='/CarAccessories'><button onClick={onClose}>Car Accessories</button></Link>
+                <Link to='/'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Home</button></Link>
+                <Link to='/User-Detail'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>User Details</button></Link>
+                <Link to='/new-car'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>New Car</button></Link>
+                <Link to='car-news'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car News</button></Link>
+                <Link to='/Car-Compare'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Comparison</button></Link>
+                <Link to='/wallpaper'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Wallpapers</button></Link>
+                <Link to='/car-rendering'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Renderings</button></Link>
+                <Link to='/Car-Rc-Details'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Rc Check</button></Link>
+                <Link to='/UsedCar'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Used Car</button></Link>
+                <Link to='/Emi-Calculator'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Emi Calculator</button></Link>
+                <Link to='/Car-Dealer'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Dealers</button></Link>
+                <Link to='/Car-Service'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Service</button></Link>
+                <Link to='/CarAccessories'><button onClick={onClose} style={{textAlign:'left', width:'180px'}}>Car Accessories</button></Link>
               </div>
 
             </DrawerBody>

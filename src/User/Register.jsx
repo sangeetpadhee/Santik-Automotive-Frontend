@@ -6,6 +6,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import Compressor from 'compressorjs';
 
 const Register = () => {
+    const [message, setMessage] = useState('');
+    const [messageType, setMessageType] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -36,7 +38,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
-
+        setMessage('')
         try { 
 
             const data = new FormData();
@@ -56,12 +58,17 @@ const Register = () => {
             const userData = response.data.user;
             setIsLoading(false);
             sessionStorage.setItem('user', JSON.stringify(userData));
-            alert(response.data.message);
+            setMessageType('success')
+            setMessage(response.data.message);
+            setTimeout(()=>{
             navigate('/User-Detail');
             window.location.reload()
-        } catch (error) {
-            console.error('Registration failed:', error);
-            alert('Registration failed: ' + (error.response?.data?.message || 'An error occurred'));
+            }, 1200)
+        } catch (error) {console.error('API Error:', error); 
+            setMessageType('error');
+            setMessage('Login failed: ' + (error.response?.data?.message || 'An error occurred'));
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -113,6 +120,12 @@ const Register = () => {
                         </div>
                     </div>
                 </div>
+                )}
+
+                    {message && (
+                        <div className={`message ${messageType}`}>
+                        {message} !
+                    </div>
                 )}
             </div>
         </>

@@ -63,7 +63,7 @@ const Caraccessoriesdetail = () => {
                 <div className="nameheading" style={{ fontWeight: '500' }}>Product Description:</div>
               </div>
               <div className="Acce-Description">{AccessoryDetails.description}</div>
-              <button>Buy Now</button>
+              <a href={AccessoryDetails.link}><button>Buy Now</button></a>
             </div>
           </main>
         </div>

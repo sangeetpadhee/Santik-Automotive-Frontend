@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../Style/UpperBelow.css";
@@ -10,7 +10,7 @@ import "../Style/CarNews.css";
 import HomeFilter from '../CarsArray/HomeFilter.jsx';
 import Carousel from './CarouselComp.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUserPlus, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUserPlus, faAngleLeft, faAngleRight ,faArrowRight, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import headcarimg from "../Assets/Untitled-1.png";
 import rendering1 from "../Assets/SCORPIO.png"
 import rendering2 from "../Assets/TOYOTADELTA.png"
@@ -18,18 +18,22 @@ import rendering3 from "../Assets/ENDEAVOURFACELIFT.png"
 import { Link } from 'react-router-dom';
 import items from '../CarsArray/ALL-CAR-DATA.jsx'
 import Search from './Search.jsx';
+import axios from 'axios';
+
 
 const Home = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [searchcar, setSearchCar] = useState([])
-    const [currentCars, setCurrentCars] = useState(HomeFilter.popfive); // Initialize state correctly
+    const[isClicked, setIsClicked] = useState(false)
+    const [currentCars, setCurrentCars] = useState([]); // Initialize state correctly
     const [NewHeight, setNewHeight] = useState(false)
 
     // Event handlers to update currentCars state
-    const handleFiveLk = () => setCurrentCars(HomeFilter.popfive);
-    const handleTenLk = () => setCurrentCars(HomeFilter.popten);
-    const handleFifteenLk = () => setCurrentCars(HomeFilter.popfifteen);
-    const handleThirty = () => setCurrentCars(HomeFilter.popthirty);
-    const handleAboveTh = () => setCurrentCars(HomeFilter.popabove);
+    const handleFiveLk = () =>{ setCurrentCars(HomeFilter.popfive); setIsClicked(true)}
+    const handleTenLk = () => {setCurrentCars(HomeFilter.popten); setIsClicked(true)}
+    const handleFifteenLk = () => {setCurrentCars(HomeFilter.popfifteen); setIsClicked(true)}
+    const handleThirty = () => {setCurrentCars(HomeFilter.popthirty); setIsClicked(true)}
+    const handleAboveTh = () => {setCurrentCars(HomeFilter.popabove); setIsClicked(true)}
 
     const handlesearch = (e) => {
         const searchletter = e.target.value.toLowerCase();
@@ -52,11 +56,34 @@ const Home = () => {
         }
         return '';
     };
+
+    
+    useEffect(() => {
+        if(!isClicked){
+            const cargroup = [];
+            for(let i = 0; i < HomeFilter.randomdisplay.length; i += 4){
+                cargroup.push(HomeFilter.randomdisplay.slice(i, i + 4));
+            }
+            setCurrentCars(cargroup[0]);
+    
+            const intervalId = setInterval(() => {
+                setCurrentIndex((prevIndex) => {
+                    const newIndex = (prevIndex + 1) % cargroup.length;
+                    setCurrentCars(cargroup[newIndex]);
+                    return newIndex;
+                });
+            }, 3500); 
+    
+            return () => clearInterval(intervalId);
+        }
+    }, [isClicked]);
+    
+    
     return (
         <>
             {/* UPPER BELOW */}
             <div className="upperbelow">
-                <div className="redlineupper"></div>
+                <div className="redlineupper" style={{borderRadius:'5px'}}></div>
                 <div className="upperbelowbox">
                     <li>LATEST CAR NEWS</li>
                     <li>NEW CAR & PRICE</li>
@@ -97,9 +124,11 @@ const Home = () => {
 
             {/* Popular Car */}
             <div className="byprice">
-            <div className="containerheading" style={{margin:'6px auto 12px auto' }}>
+                <div className="Popular-Car-Heading-Container" >
+                <div className="containerheading" style={{marginTop:'0px' }}>
                  <div className="redbarheading"></div>
-                 <div className="nameheading" id='Home-Page-Red' >Popular Car By Budget : </div>
+                 <div className="nameheading-popular-car" id='Home-Page-Red' >Popular Car By Budget : </div>
+                 </div>
             </div>
                 <div className="upperbyprice">
                     <button className="budget" id="oneto" onClick={handleFiveLk}>1-5 Lakh</button>
@@ -127,7 +156,7 @@ const Home = () => {
                  <div className="redbarheading" id='Home-Page-RedBar' ></div>
                  <div className="nameheading" id='Home-Page-Red' style={{color:'black'}}>Explore Our Categories </div>
             </div>
-          <a className="view-all-link" onClick={() => setNewHeight(!NewHeight)}>View All Services ➔</a>
+          <a className="view-all-link" onClick={() => setNewHeight(!NewHeight)}> <p>View All Services </p>{NewHeight ? (<i><FontAwesomeIcon icon={faArrowDown}/></i>):(<i><FontAwesomeIcon icon={faArrowRight}/></i>)}</a>
         </div>
         <div className="categories-grid">
             <Link to='/Car-Service'><div className="category-card">
@@ -204,12 +233,12 @@ const Home = () => {
                     <div className="nameheading" id='Home-Page-Red'>Car Renderings</div>
                 </div>
                 <div className="popularcarlist">
-                    <div className="popularcarbody" style={{ backgroundImage: `url(${rendering1})` }}>
-                    </div>
-                    <div className="popularcarbody" style={{ backgroundImage: `url(${rendering2})` }}>
-                    </div>
-                    <div className="popularcarbody" style={{ backgroundImage: `url(${rendering3})` }}>
-                    </div>
+                    <Link to='/car-rendering'><div className="popularcarbody" style={{ backgroundImage: `url(${rendering1})` }}>
+                    </div></Link>
+                    <Link to='/car-rendering'><div className="popularcarbody" style={{ backgroundImage: `url(${rendering2})` }}>
+                    </div></Link>
+                    <Link to='/car-rendering'><div className="popularcarbody" style={{ backgroundImage: `url(${rendering3})` }}>
+                    </div></Link>
                     <div className="formorefilter" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                         <span>Click Below For More Renderings</span>
                         <Link to='/car-rendering'><button className="formorefilterbutton">Click Here</button></Link>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 import '../Style/Carcompare.css';
@@ -23,6 +23,12 @@ const Carcompare = () => {
   const [SelectedBrand2, setSelectedBrand2] = useState(null);
   const [SelectedCar2, setSelectedCar2] = useState(null);
   const [SelectedVariant2, setSelectedVariant2] = useState(null);
+
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+  
 
   const HandleBrand = (brand) => {
     const namefil = items.filter((product) => product.make.toLowerCase() === brand.toLowerCase());
@@ -260,6 +266,17 @@ const Carcompare = () => {
           <td>{variantDetails.car2.transmission}</td>
         </tr>
         <tr>
+          <td>Engine Capacity</td>
+          <td>{SelectedCar?.engine.capacity}</td>
+          <td>{SelectedCar2?.engine.capacity}</td>
+        </tr>
+        <tr>
+          <td>Seating Capacity</td>
+          <td>{SelectedCar?.engine['seating capacity']}</td>
+          <td>{SelectedCar2?.engine['seating capacity']}</td>
+        </tr>
+        
+        <tr>
           <td>Fuel Type</td>
           <td>{variantDetails.car1.fuelType}</td>
           <td>{variantDetails.car2.fuelType}</td>
@@ -281,16 +298,6 @@ const Carcompare = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Engine Capacity</td>
-          <td>{SelectedCar?.engine.capacity}</td>
-          <td>{SelectedCar2?.engine.capacity}</td>
-        </tr>
-        <tr>
-          <td>Seating Capacity</td>
-          <td>{SelectedCar?.engine['seating capacity']}</td>
-          <td>{SelectedCar2?.engine['seating capacity']}</td>
-        </tr>
         <tr>
           <td>Length</td>
           <td>{SelectedCar?.dimensions.length}</td>

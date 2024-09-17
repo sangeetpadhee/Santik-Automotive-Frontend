@@ -24,7 +24,13 @@ const Wallpaper = () => {
               <img src={car.ImgSrc} alt="" loading='lazy' />
             </div>
             <div className="Wallpaper-Page-Name">{car.Name}</div>
-            <a href="" download={car.ImgSrc} className="Wallpaper-Page-Download">Download <i class="fa-solid fa-download" style={{fontSize: '18px', marginTop: '1px'}}></i></a>
+            <a
+              href={car.ImgSrc} 
+              target='_blank'
+              className="Wallpaper-Page-Download"
+            >
+              Download <i className="fa-solid fa-download" style={{ fontSize: '18px', marginTop: '1px' }}></i>
+            </a>
           </div>
         ))}
       </div>
