@@ -88,13 +88,19 @@ export const MobileWallpaperArray = [
 export const LaptopWallpaperArray=[
     {
         "MobileWallpaperId": 1,
-        "ImgSrc": "https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219713/19_lksu8k.png ",
+        "ImgSrc": " https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219708/14_pmsqer.png",
         "Name": "Mahindra XUV 700",
+        "category": "Laptop"
+    },  
+    {
+        "MobileWallpaperId": 6,
+        "ImgSrc": "https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219681/3_yay7zj.png ",
+        "Name": "Hyundai I20",
         "category": "Laptop"
     },
     {
         "MobileWallpaperId": 2,
-        "ImgSrc": " https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219708/14_pmsqer.png",
+        "ImgSrc": "https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219713/19_lksu8k.png ",
         "Name": "Mahindra XUV 700",
         "category": "Laptop"
     },
@@ -114,12 +120,6 @@ export const LaptopWallpaperArray=[
         "MobileWallpaperId": 5,
         "ImgSrc": "https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219702/17_gj7tqg.png",
         "Name": "Tata Safari",
-        "category": "Laptop"
-    },
-    {
-        "MobileWallpaperId": 6,
-        "ImgSrc": "https://res.cloudinary.com/dtebgdkhj/image/upload/v1724219681/3_yay7zj.png ",
-        "Name": "Hyundai I20",
         "category": "Laptop"
     },
     {

@@ -115,7 +115,7 @@ const Usedcar = () => {
         resetSearch={resetsearch} 
       />
       <div className="containerqq" style={{ marginLeft: '-25px' }}>
-        <div className="redbar"></div>
+        <div className="redbar" style={{borderRadius:'10px'}}></div>
         <div className="name">Search Car By Filter :</div>
       </div>
       <div className="cardetailheader" style={{ marginTop: '-10px', height: 'auto', flexWrap: 'wrap' }}>

@@ -33,6 +33,7 @@ const Login = () => {
             // Delay navigation 
             setTimeout(() => {
                 navigate('/User-Detail');
+                window.location.reload()
             }, 1500); // 
         } catch (error) {
             console.error('API Error:', error); 

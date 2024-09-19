@@ -47,6 +47,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .User-Detail-Img {
+    display: flex;
     height: 160px;
     width: 160px;
     background-position: center;
@@ -55,7 +56,72 @@
     border-radius: 50%;
     margin-bottom: 1rem;
     border: 4px solid #007bff; /* Border to match theme */
+    >i{
+        margin: auto 0 0 auto ;
+    }
 }
+
+.user-Detail-Edit {
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; /* Responsive width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 2px dashed #e1e1e1;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.user-Detail-Edit label {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+    >i{
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
+
+.User-Detail-Image-Upload {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.User-Detail-Image-Upload:hover {
+    border-color: #007bff;
+}
+
+.User-Detail-Image-Upload::file-selector-button {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.User-Detail-Image-Upload::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
 
 .User-Details-Container {
     margin-top: 20px;
@@ -170,12 +236,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.Each-Feedback-Container h1 {
+.Each-Feedback-Container h2 {
     text-transform: capitalize;
     font-size: 1.25rem;
+    width: 100%;
     font-weight: 700;
     color: #0056b3;
     margin: 0;
+    display: flex;
+    >i{
+        margin-left: auto;
+        font-size: 16px;
+    }
 }
 
 .Each-Feedback-Container h2 {
@@ -275,6 +347,10 @@
 .User-Detail-Img {
     height: 80px;
     width: 80px;
+    >i{
+        margin-right:-10px;
+        margin-bottom:-12px;
+    }
 }
 
 .User-Details-Container {

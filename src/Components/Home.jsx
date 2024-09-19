@@ -59,6 +59,7 @@ const Home = () => {
 
     
     useEffect(() => {
+        handleWakeUp();
         if(!isClicked){
             const cargroup = [];
             for(let i = 0; i < HomeFilter.randomdisplay.length; i += 4){
@@ -72,13 +73,20 @@ const Home = () => {
                     setCurrentCars(cargroup[newIndex]);
                     return newIndex;
                 });
-            }, 3500); 
+            }, 2500); 
     
             return () => clearInterval(intervalId);
         }
     }, [isClicked]);
     
-    
+    const handleWakeUp = async () => {
+        try {
+            await axios.get('https://santik-automotive-api.onrender.com/api/user/Wakeup');
+            console.log('Server wake-up call successful');
+        } catch (error) {
+            console.error('Failed to wake up server:', error);
+        }
+    };
     return (
         <>
             {/* UPPER BELOW */}
@@ -220,18 +228,22 @@ const Home = () => {
 
 
             {/* Car News */}
-            <div className="containerheading" style={{margin:'30px 0 12px 20px' }}>
+            <div className="Popular-Car-Heading-Container" >
+                <div className="containerheading" style={{marginTop:'0px' }}>
                  <div className="redbarheading"></div>
-                 <div className="nameheading" id='Home-Page-Red'>Latest Car News : </div>
+                 <div className="nameheading-popular-car" id='Home-Page-Red' >Latest Car News : </div>
+                 </div>
             </div>
             <Carousel />
 
             {/* MORE WALLPAPER */}
             <div className="popularcar">
-                <div className="containerheading" style={{marginTop:'10px'}}>
-                    <div className="redbarheading"></div>
-                    <div className="nameheading" id='Home-Page-Red'>Car Renderings</div>
-                </div>
+            <div className="Popular-Car-Heading-Container" style={{height:'75px'}} >
+                <div className="containerheading" style={{marginTop:'0px' }}>
+                 <div className="redbarheading"></div>
+                 <div className="nameheading-popular-car" id='Home-Page-Red' >Car Rendering</div>
+                 </div>
+            </div>
                 <div className="popularcarlist">
                     <Link to='/car-rendering'><div className="popularcarbody" style={{ backgroundImage: `url(${rendering1})` }}>
                     </div></Link>

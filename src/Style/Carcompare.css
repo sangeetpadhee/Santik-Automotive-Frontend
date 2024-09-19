@@ -4,14 +4,14 @@
   height: 250px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 .Choose-First, .Choose-Second{
   border: 1px solid #bdbbbb;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 230px;
+  height: 230px;  
   width: 280px;
   border-radius: 10px;
   background-color: rgba(209, 211, 213, 0.751);
@@ -243,7 +243,7 @@
 
   .Choose-First, .Choose-Second {
     width: 45%; 
-    height: auto;
+    height: 180px;
     max-height: 200px;
     margin: 5px;
   }

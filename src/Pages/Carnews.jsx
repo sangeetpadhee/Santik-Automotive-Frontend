@@ -9,10 +9,12 @@ const Carnews = () => {
 
   return (
     <>
-      <div className="containerqq">
-        <div className="redbar"></div>
-        <div className="name">CAR NEWS</div>
-      </div>
+        <div className="Popular-Car-Heading-Container" >
+              <div className="containerheading" style={{marginTop:'0px' }}>
+              <div className="redbarheading"></div>
+              <div className="nameheading-popular-car" id='Home-Page-Red' >Car News : </div>
+              </div>
+        </div>
       <div className="containerww">
         {data.map((news, index) => (
           <div key={index} className="detail">
