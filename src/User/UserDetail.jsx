@@ -7,7 +7,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import Compressor from 'compressorjs';
 
-const UserDetail = () => {
+const UserDetail = ({ User, setUser }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [NewProfilePic, setNewProfilePic]=useState({
         profileImg:''
@@ -16,33 +16,14 @@ const UserDetail = () => {
     const [message, setMessage] = useState('');
     const [messageType, setMessageType] = useState('');
     const[SerachedCar, setSearchedCar] = useState([])
-    const [User, setUser]=useState(null)
     const [UserFeedback, setUserFeedback]=useState([])
     const [FormDataOne, setFormDataOne] = useState({
         UserId:'',
         CarName:'',
         Feedback:''
     })
-    useEffect(() => {
-        const validData = sessionStorage.getItem('user');
-        setMessage('')
-        if (validData) {
-            try {
-                const parsedData = JSON.parse(validData);
-                setUser(parsedData);
-                setFormDataOne((prevState) => ({
-                    ...prevState,
-                    UserId: parsedData._id,
-                }));
-                HandleFeedbacks(parsedData._id);
-            } catch (error) {
-                console.error('Failed to parse user data:', error);
-            }
-        }
-    }, []);
-    
-    
 
+    
     const{UserId, CarName, Feedback}= FormDataOne
     const ONchange = (e)=> setFormDataOne({...FormDataOne, [e.target.name]:e.target.value})
 
@@ -164,7 +145,7 @@ const UserDetail = () => {
 
             const updatedUser = response.data.user; 
             // Update the user
-            setUser(updatedUser);
+            setUser(updatedUser)
             sessionStorage.setItem('user', JSON.stringify(updatedUser));
 
             setProfilePicChange(false);

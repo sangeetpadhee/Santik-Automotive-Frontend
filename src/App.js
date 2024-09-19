@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Nav from './Components/Nav'
 import Home from './Components/Home'
@@ -24,13 +24,21 @@ import UserDetail from './User/UserDetail'
 import AllCarReviews from './Pages/AllCarReviews'
 
 const App = () => {
+  const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const storedUser = sessionStorage.getItem('user');
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
   return (
     <Router>
-      <Nav/>
+      <Nav User={user} setUser={setUser}/>
       <Routes>
 
         <Route path='/' element={<Home/>}/>
-        <Route path='/User-Detail' element={<UserDetail/>}/>
+        <Route path='/User-Detail' element={<UserDetail User={user} setUser={setUser}/>}/>
         <Route path='/car-news' element={<Carnews/>}/>
         <Route path='/new-car' element={<Newcar/>}/>
         <Route path='/wallpaper' element={<Wallpaper/>}/>

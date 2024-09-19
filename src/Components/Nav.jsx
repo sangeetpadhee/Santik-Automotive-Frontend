@@ -10,16 +10,8 @@ import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const Nav = () => {
+const Nav = ({ User, setUser }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [User, setUser] = useState()
-
-  useEffect(() => {
-    const storedUser = sessionStorage.getItem('user');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-  }, []);
 
   const firstName=(userfirstname)=>{
     return userfirstname.split(' ')[0];
