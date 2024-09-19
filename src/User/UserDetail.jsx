@@ -22,14 +22,26 @@ const UserDetail = ({ User, setUser }) => {
         CarName:'',
         Feedback:''
     })
+    useEffect(() => {
+        if (User) {
+            setFormDataOne((prevState) => ({
+                ...prevState,
+                UserId: User._id,
+            }));
+            HandleFeedbacks(User._id);
+        }
+    }, [User]);
+    
 
     
     const{UserId, CarName, Feedback}= FormDataOne
     const ONchange = (e)=> setFormDataOne({...FormDataOne, [e.target.name]:e.target.value})
 
     const DeleteFeedback =async(deletid)=>{
+        setIsLoading(true)
         try{
             const deletefeed = await axios.delete(`https://santik-automotive-api.onrender.com/api/user/DeleteFeedback/${deletid}`)
+            setIsLoading(false)
             setMessageType('success');
             setUserFeedback(prevFeedbacks => prevFeedbacks.filter(feedback => feedback._id !== deletid));
             setMessage(deletefeed.data.message);
@@ -37,8 +49,9 @@ const UserDetail = ({ User, setUser }) => {
                 setMessage('')
             },2000) 
         }catch(error){
+        setIsLoading(false)
         setMessageType('error');
-        setMessage('unable To Delete Right Now : ' + (error.deletefeed?.data?.message || 'An error occurred'));
+        setMessage('Unable To Delete Right Now : ' + (error.deletefeed?.data?.message || 'An error occurred'));
         console.error(error)
         setTimeout(()=>{
             setMessage('')
@@ -46,33 +59,32 @@ const UserDetail = ({ User, setUser }) => {
         }
     }
 
-    const HandleSumbit= async(e)=>{
+    const HandleSumbit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
-        try{
-            const baseUrl = await axios.post(`https://santik-automotive-api.onrender.com/api/user/Feedback`, FormDataOne)
+        try {
+            const response = await axios.post(`https://santik-automotive-api.onrender.com/api/user/Feedback`, FormDataOne);
+            setIsLoading(false);
             setMessageType('success');
-            setMessage(baseUrl.data.message); 
-            await HandleFeedbacks(User._id);
+            setMessage(response.data.message); 
+            await HandleFeedbacks(User._id); // Fetch updated feedbacks
             setFormDataOne({
                 UserId: User._id,
                 CarName: '',
                 Feedback: '',
             });
-            setTimeout(()=>{
-                setMessage('')
-            },2000) 
-            setIsLoading(false);
-        }catch (error) {
+        } catch (error) {
             console.error('Feedback Submission failed:', error);
             setMessageType('error');
-            setMessage('Sumbit failed: ' + (error.baseUrl?.data?.message || 'An error occurred'));
-            setTimeout(()=>{
-                setMessage('')
-            },2000) 
+            setMessage('Submit failed: ' + (error.response?.data?.message || 'An error occurred'));
+        } finally {
             setIsLoading(false);
+            setTimeout(() => {
+                setMessage('');
+            }, 2000);
         }
-    }
+    };
+    
     const HandleFeedbacks=async(UserId)=>{
         try{
             
